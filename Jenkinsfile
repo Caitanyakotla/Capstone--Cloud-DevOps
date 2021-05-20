@@ -21,7 +21,7 @@ pipeline {
         stage('Set K8S Context'){
             steps {
                 withAWS(credentials:'aws-credentials'){
-                    sh "kubectl config set-context arn:aws:eks:us-east-2:319947095944:cluster/production"
+                    sh "kubectl config set-context arn:aws:iam::747565123955:role/eksctl-udacity-krishna-cluster-no-NodeInstanceRole-154HN4NU8UMEL"
                 }
             }
         }
