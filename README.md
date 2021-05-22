@@ -23,7 +23,6 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 - EKS
 - CloudFormation
 - BASH
-- LucidChart
 - Git & GitHub
 - AWS & AWS-CLI
 - Python
@@ -36,7 +35,6 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 - EKS
 - CloudFormation
 - BASH
-- LucidChart
 
 <hr>
 
@@ -71,3 +69,11 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
         $./upload_docker.sh
     ```
 <hr>
+
+## Setup
+
+The blue Deployment is the version that is deployed live in production. It can be accessed externally by end users via a Service with type=LoadBalancer
+
+### Create the Blue Deployment
+
+The Deployment will start up with python flask  containers as the application. The Deployment has a `name` and `version` label. This is significant as the Service will use these labels to switch to the green version later.
