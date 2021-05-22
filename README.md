@@ -103,7 +103,7 @@ The Deployment will start up with python flask  containers as the application. T
 ## Project Files
 **- **Application files****
   - **app.py** - This is the python=flask web application
-  - **green/blue.html** - This is the default index.html file
+  - **green/blue.html** - This is the default green.html/blue.html file
   - **.gitignore** - This has the files that should not be added to the git repository
 **- **Docker files****
   - **Dockerfile** - This is the docker build file to containerize the app inside Docker
