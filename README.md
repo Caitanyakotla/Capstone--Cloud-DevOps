@@ -70,6 +70,25 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
     ```
 <hr>
 
+## Deploy the Docker image to local Kubernetes Cluster
+1. Deploy the application and service to Kubernetes
+```bash
+kubectl apply -f .
+
+```
+
+2. Check that pods, deployment and service are created and running 
+```bash
+kubectl get all
+```
+
+Delete the kubernetes deployment and service
+```bash
+kubectl delete deployment blue-flask-app green-flask-app
+kubectl delete svc
+kubectl delete hpa
+
+
 ## Setup
 
 The blue Deployment is the version that is deployed live in production. It can be accessed externally by end users via a Service with type=LoadBalancer
@@ -77,3 +96,19 @@ The blue Deployment is the version that is deployed live in production. It can b
 ### Create the Blue Deployment
 
 The Deployment will start up with python flask  containers as the application. The Deployment has a `name` and `version` label. This is significant as the Service will use these labels to switch to the green version later.
+
+
+
+
+## Project Files
+**- **Application files****
+  - **app.py** - This is the python=flask web application
+  - **green/blue.html** - This is the default index.html file
+  - **.gitignore** - This has the files that should not be added to the git repository
+**- **Docker files****
+  - **Dockerfile** - This is the docker build file to containerize the app inside Docker
+  - **.dockerignore** - This has the files that should not be copied when building the Docker image
+**- **Script files****
+  - **run_docker.sh** - This script will build the Docker image of the app and run the app inside the container
+  - **upload_docker.sh** - This script uploads the Docker image to Docker hub repository
+  - **run_kubernetes.sh** - This script deploys the Docker image to a Kubernetes cluster and runs the app in pods.
