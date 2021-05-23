@@ -70,6 +70,21 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
     ```
 <hr>
 
+- **Installation guidelines Docker With Jenkins:**
+
+    - Install docker on jenkins server.
+
+    - Add jenkins to docker group:
+        ```
+        $ sudo usermod -aG docker jenkins
+        ```
+
+    - Install "Docker", "Github" jenkin's plug-in.
+
+    - Add Docker-Hub credentials to jenkins.
+
+
+
 ## Deploy the Docker image to local Kubernetes Cluster
 1. Deploy the application and service to Kubernetes
 ```bash
