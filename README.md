@@ -112,3 +112,17 @@ The Deployment will start up with python flask  containers as the application. T
   - **run_docker.sh** - This script will build the Docker image of the app and run the app inside the container
   - **upload_docker.sh** - This script uploads the Docker image to Docker hub repository
   - **run_kubernetes.sh** - This script deploys the Docker image to a Kubernetes cluster and runs the app in pods.
+  
+  
+  
+# Perform security scanning of the Docker containers
+static analysis for docker image (output of image can be seen in screenshot/Vulnerablities static analysis)
+
+# Post-deployment add testing of your application
+# Zero downtime. 
+Blue/green deployment allows cutover to happen quickly with no downtime.
+# Instant rollback. 
+You can roll back at any time during the deployment process by adjusting the load balancer to direct traffic back to the blue environment. The impact of downtime is limited to the time it takes to switch traffic to the blue environment after you detect an issue.
+# Environment separation. 
+Blue/green deployment ensures that spinning up a parallel green environment doesn't affect resources that support the blue environment. This separation reduces your deployment risk.
+
