@@ -73,7 +73,11 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 
 <br>
 
-- **Installation guidelines Docker With Jenkins:**
+##  Installation guidelines Docker With Jenkins:**
+
+
+
+This file contains the steps of CICD pipeline of application.
 
     - Install docker on jenkins server.
 
