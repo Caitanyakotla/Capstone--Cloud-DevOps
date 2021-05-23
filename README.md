@@ -41,7 +41,7 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 ## Project Steps
 
 1. [Development](#development)
-2. [Jenkins](#jenkins)
+2. [Installation guidelines Docker With Jenkins:](#jenkins)
 3. [Setup Kubernetes Cluster](#setup-kubernetes-cluster)(Deploy the Docker image to local Kubernetes Cluster) 
 4. [CI/CD Pipeline](#ci/cd-pipeline)
 
